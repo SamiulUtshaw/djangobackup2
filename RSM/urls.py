@@ -16,7 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from realestate import views as r_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',r_view.buy, name= 'buy'),
+    path('rent/' ,r_view.rent, name='rent'),
+    path('buyhome1/' ,r_view.buyhome1, name='buyhome1'),
+    path('buyhome2/' ,r_view.buyhome2, name='buyhome2'),
+    path('renthome1/' ,r_view.renthome1, name='renthome1'),
+    path('renthome2/' ,r_view.renthome2, name='renthome2'),
+    path('confirm/' ,r_view.confirm, name='confirm'),
+
+
 ]

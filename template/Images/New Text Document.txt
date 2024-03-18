@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            display: flex;
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .left-section,
+        .right-section {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .cover-image {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+            /* Make cover image fill the container */
+        }
+        
+        .profile-picture {
+            max-width: 150px;
+            border-radius: 50%;
+            position: relative;
+            left: -20%;
+            /* Move profile picture slightly to the left */
+            transform: translateX(-50%);
+            /* Center profile picture horizontally */
+            margin-top: -50px;
+            /* Adjust vertical position */
+        }
+        
+        .overview {
+            font-style: italic;
+        }
+        
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+        
+        .right-section .card {
+            width: 80%;
+            /* Make the right-side card a little bigger */
+            margin: 0 auto;
+            /* Center the right-side card horizontally */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-section" style="padding-top: 30px; padding-bottom: 30px;">
+            <div class="card">
+                <img src="Images/background.png" alt="Cover Image" class="cover-image">
+                <img src="Images/profile.png" alt="Profile Picture" class="profile-picture">
+                <h2>Name</h2>
+                <p>Designation</p>
+            </div>
+            <div class="card overview">
+                <h3>Company Overview</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+            </div>
+        </div>
+        <div class="right-section" style="padding-top: 30px; padding-bottom: 30px;">
+            <div class="card">
+                <h2>Office Name</h2>
+                <p>Address: 123 Main Street, City, Country</p>
+                <ul class="contact-info">
+                    <li>Phone: +1234567890</li>
+                    <li>Email: info@example.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
