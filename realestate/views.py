@@ -26,3 +26,9 @@ def confirm(request):
 def agent_p(request):
     return render(request,template_name='CompanyProfile.html')
 
+def profile(request):
+    return render(request,template_name='profile.html')
+
+def agent(request):
+    return render(request,template_name='agent.html')
+

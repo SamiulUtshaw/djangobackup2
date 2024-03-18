@@ -27,6 +27,8 @@ urlpatterns = [
     path('renthome1/' ,r_view.renthome1, name='renthome1'),
     path('renthome2/' ,r_view.renthome2, name='renthome2'),
     path('confirm/' ,r_view.confirm, name='confirm'),
+    path('profile/' ,r_view.profile, name='profile'),
+    path('agent/' ,r_view.agent, name='agent'),
 
 
 ]
